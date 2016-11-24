@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ionic-native-transitions',
+1 verbose cli   '--save' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/tismacn1/IonicProject/MOH-Messenger/package.json
+5 warn package.json MOH-Messenger@1.1.1 No repository field.
+6 warn package.json MOH-Messenger@1.1.1 No README data
+7 warn package.json MOH-Messenger@1.1.1 No license field.
+8 verbose installManyTop reading scoped package data from /Users/tismacn1/IonicProject/MOH-Messenger/node_modules/websql/package.json
+9 verbose readDependencies loading dependencies from /Users/tismacn1/IonicProject/MOH-Messenger/package.json
+10 silly cache add args [ 'ionic-native-transitions', null ]
+11 verbose cache add spec ionic-native-transitions
+12 silly cache add parsed spec { raw: 'ionic-native-transitions',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'ionic-native-transitions',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed ionic-native-transitions@*
+14 verbose addNamed "*" is a valid semver range for ionic-native-transitions
+15 silly addNameRange { name: 'ionic-native-transitions', range: '*', hasData: false }
+16 silly mapToRegistry name ionic-native-transitions
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/ionic-native-transitions
+20 verbose addNameRange registry:https://registry.npmjs.org/ionic-native-transitions not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/ionic-native-transitions
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 4:06:54 PM
+24 verbose request id 0887d9026fd4c9fc
+25 verbose etag "8Q8U16NSCXGGFZOP4K9WEFW3T"
+26 http request GET https://registry.npmjs.org/ionic-native-transitions
+27 http 200 https://registry.npmjs.org/ionic-native-transitions
+28 silly get cb [ 200,
+28 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly get     etag: '"6DJ9W8QFJ8D6X9Q2OR7EHMVHR"',
+28 silly get     'content-type': 'application/json',
+28 silly get     'cache-control': 'max-age=300',
+28 silly get     'content-length': '66534',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Tue, 19 Apr 2016 10:37:17 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     age: '0',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-sin6926-SIN',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1461062237.035984,VS0,VE961',
+28 silly get     vary: 'Accept-Encoding' } ]
+29 verbose get saving ionic-native-transitions to /Users/tismacn1/.npm/registry.npmjs.org/ionic-native-transitions/.cache.json
+30 silly addNameRange number 2 { name: 'ionic-native-transitions', range: '*', hasData: true }
+31 silly addNameRange versions [ 'ionic-native-transitions',
+31 silly addNameRange   [ '1.0.0-alpha1',
+31 silly addNameRange     '1.0.0-alpha2',
+31 silly addNameRange     '1.0.0-alpha4',
+31 silly addNameRange     '1.0.0-alpha5',
+31 silly addNameRange     '1.0.0-beta1',
+31 silly addNameRange     '1.0.0-beta2',
+31 silly addNameRange     '1.0.0-beta3',
+31 silly addNameRange     '1.0.0-beta4',
+31 silly addNameRange     '1.0.0-beta5',
+31 silly addNameRange     '1.0.0-beta6',
+31 silly addNameRange     '1.0.0-rc1',
+31 silly addNameRange     '1.0.0-rc2',
+31 silly addNameRange     '1.0.0-rc3',
+31 silly addNameRange     '1.0.0-rc4',
+31 silly addNameRange     '1.0.0-rc5',
+31 silly addNameRange     '1.0.0-rc6',
+31 silly addNameRange     '1.0.0-rc7',
+31 silly addNameRange     '1.0.0-rc8',
+31 silly addNameRange     '1.0.0-rc9',
+31 silly addNameRange     '1.0.0-rc10' ] ]
+32 verbose stack Error: No compatible version found: ionic-native-transitions@'*'
+32 verbose stack Valid install targets:
+32 verbose stack ["1.0.0-alpha1","1.0.0-alpha2","1.0.0-alpha4","1.0.0-alpha5","1.0.0-beta1","1.0.0-beta2","1.0.0-beta3","1.0.0-beta4","1.0.0-beta5","1.0.0-beta6","1.0.0-rc1","1.0.0-rc2","1.0.0-rc3","1.0.0-rc4","1.0.0-rc5","1.0.0-rc6","1.0.0-rc7","1.0.0-rc8","1.0.0-rc9","1.0.0-rc10"]
+32 verbose stack
+32 verbose stack     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:274:12)
+32 verbose stack     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:253:17)
+32 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:230:5)
+32 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+32 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+32 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+32 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+32 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+33 verbose cwd /Users/tismacn1/IonicProject/MOH-Messenger
+34 error Darwin 15.2.0
+35 error argv "node" "/usr/local/bin/npm" "install" "ionic-native-transitions" "--save"
+36 error node v0.12.7
+37 error npm  v2.11.3
+38 error code ETARGET
+39 error notarget No compatible version found: ionic-native-transitions@'*'
+39 error notarget Valid install targets:
+39 error notarget ["1.0.0-alpha1","1.0.0-alpha2","1.0.0-alpha4","1.0.0-alpha5","1.0.0-beta1","1.0.0-beta2","1.0.0-beta3","1.0.0-beta4","1.0.0-beta5","1.0.0-beta6","1.0.0-rc1","1.0.0-rc2","1.0.0-rc3","1.0.0-rc4","1.0.0-rc5","1.0.0-rc6","1.0.0-rc7","1.0.0-rc8","1.0.0-rc9","1.0.0-rc10"]
+39 error notarget
+39 error notarget This is most likely not a problem with npm itself.
+39 error notarget In most cases you or one of your dependencies are requesting
+39 error notarget a package version that doesn't exist.
+39 error notarget
+39 error notarget It was specified as a dependency of 'MOH-Messenger'
+40 verbose exit [ 1, true ]

@@ -1,0 +1,30 @@
+<ion-view view-title="Chats"  cache-view="false" ng-init="getChats()">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-more-vertical" ng-click="popover.show($event)"></button>
+    </ion-nav-buttons>
+
+    <!--
+     <ion-nav-buttons side="left">
+     <button class="button button-icon icon  ion-chevron-left" ng-click="goBack()" >Back</button>
+     </ion-nav-buttons>
+     -->
+    <ion-content has-bouncing="true">
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" collection-repeat="chatlist in perviouschat"  type="item-text-wrap" ng-click="chating(chatlist)">
+                <img actual-src="{{chatlist.avatar}}" ng-src="images/mail_defoult.png" >
+                    <h2>{{chatlist.name}}</h2>
+                    <span class="cell-time"></span>
+                    <p ng-if='chatlist.imgFlag==1'><i class="ion-ios-camera"></i> Image
+</p>
+                    <p ng-if='chatlist.imgFlag==0'>{{chatlist.message}}</p>
+                    <span class="badge badge-assertive" ng-if="chatlist.unreadmessage>0">{{chatlist.unreadmessage}}</span>
+                    <!--
+                     <i class="icon ion-chevron-right icon-accessory"></i>
+                     -->
+                    <ion-option-button class="button-assertive">
+                        Delete
+                    </ion-option-button>
+                    </ion-item>    
+        </ion-list>
+    </ion-content>
+</ion-view>

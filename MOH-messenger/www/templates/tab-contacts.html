@@ -1,0 +1,38 @@
+
+<ion-view view-title="Contacts"  ng-init="getContact('0')">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-more-vertical" ng-click="popover.show($event)"></button>
+        </ion-nav-buttons>
+    <ion-content has-bouncing="true" >
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search">
+                </label>
+        <ion-spinner icon="android" ng-show="myValue" class="ng-hide"></ion-spinner>
+        <ion-list>
+            <!--<div class="item item-divider">A</div>-->
+          
+          <ion-item class="item-remove-animate item-avatar item-icon-right" collection-repeat="contact in results" type="item-text-wrap" ng-click="chating(contact.doc)">
+          <img  actual-src="{{contact.doc.avatar}}" ng-src="images/mail_defoult.png" />
+          <h2>{{contact.doc.name}}</h2>
+          <span class="cell-time" ng-if="contact.doc.isUser==1">Mobile</span>
+          <span class="cell-time" ng-if="contact.doc.isUser!=1">Invite</span>
+
+          <p ng-if="contact.doc.isUser==1">{{contact.doc.status}}</p>
+          <p ng-if="contact.doc.isUser!=1">{{contact.doc.phone}}</p>
+
+            <!--
+           <i class="icon ion-chevron-right icon-accessory"></i>
+           -->
+          <!--ng-click="rcollectionemove(chat)" -->
+          <ion-option-button class="button-assertive" >
+              Delete
+          </ion-option-button>
+          </ion-item>
+          
+        </ion-list>
+        <ion-spinner ng-show="mySpinner" class="ng-hide"  icon="android"></ion-spinner>
+
+              <ion-infinite-scroll  ng-if="contactCheck"   icon="ion-loading-c" spinner="android" on-infinite="addMoreItem()" distance="1"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>
